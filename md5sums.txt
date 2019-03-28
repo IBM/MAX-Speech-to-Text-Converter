@@ -1,0 +1,4 @@
+7423967be98caae08a348a3c674ce20d  assets/models/alphabet.txt
+5f762eecdc4c4cc2068dc1a84ec57873  assets/models/lm.binary
+98bbe662994b768602b0a9a8011e8aeb  assets/models/output_graph.pbmm
+182f72835a19800a3564b5da75ffc526  assets/models/trie

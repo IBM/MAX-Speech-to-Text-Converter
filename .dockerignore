@@ -1,0 +1,7 @@
+README.*
+.idea/
+.git/
+.gitignore
+tests/
+.pytest_cache
+tests/
