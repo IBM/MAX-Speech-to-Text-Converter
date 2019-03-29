@@ -1,7 +1,5 @@
 FROM codait/max-base:v1.1.1
 
-RUN apt-get update && apt-get install -y sox libsox2 libstdc++6 libgomp1 libpthread-stubs0-dev && rm -rf /var/lib/apt/lists/*
-
 ARG model_bucket=http://max-assets.s3.us.cloud-object-storage.appdomain.cloud/speech-to-text-converter/1.0
 ARG model_file=assets.tar.gz
 
