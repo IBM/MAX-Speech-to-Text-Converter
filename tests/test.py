@@ -87,6 +87,17 @@ def test_bad_extension():
     response = r.json()
     assert response['status'] == 'error'
 
+    # run this test again with a txt file (github issue #2)
+    file_path = 'tests/test.txt'
+
+    with open(file_path, 'rb') as file:
+        file_form = {'audio': (file_path, file, 'audio/wav')}
+        r = requests.post(url=model_endpoint, files=file_form)
+
+    assert r.status_code == 400
+    response = r.json()
+    assert response['status'] == 'error'
+
 
 def test_stereo():
     model_endpoint = SERVER_URL + '/model/predict'
