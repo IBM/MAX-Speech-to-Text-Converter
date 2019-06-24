@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IBM/MAX-News-Text-Generator.svg?branch=master)](https://travis-ci.org/IBM/MAX-Speech-To-Text-Conveter)
+[![Build Status](https://travis-ci.com/IBM/MAX-Speech-To-Text-Converter.svg?branch=master)](https://travis-ci.com/IBM/MAX-Speech-To-Text-Converter)
 
 
 [<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">](http://ibm.biz/max-to-ibm-cloud-tutorial) 
