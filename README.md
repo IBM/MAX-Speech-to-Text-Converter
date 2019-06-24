@@ -128,7 +128,7 @@ folder) and get predicted text from the API.
 You can also test it on the command line, for example:
 
 ```
-$ curl -F "audio=@assets/8455-210777-0068.wav" -X POST http://localhost:5000/model/predict
+$ curl -F "audio=@samples/8455-210777-0068.wav" -X POST http://localhost:5000/model/predict
 ```
 
 You should see a JSON response like that below:
