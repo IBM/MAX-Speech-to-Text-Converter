@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/IBM/MAX-Speech-To-Text-Converter.svg?branch=master)](https://travis-ci.com/IBM/MAX-Speech-To-Text-Converter)
+
+
+[<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">](http://ibm.biz/max-to-ibm-cloud-tutorial) 
+
 # IBM Developer Model Asset Exchange: Speech to Text Converter
 
 This repository contains code to instantiate and deploy a speech recognition model. The model takes a short (~5 second),
@@ -14,7 +19,8 @@ on [Baidu's Deep Speech research paper](https://arxiv.org/abs/1412.5567).
 The model files are hosted on
 [IBM Cloud Object Storage](http://max-assets.s3-api.us-geo.objectstorage.softlayer.net/speech-to-text-converter/1.0/assets.tar.gz).
 The code in this repository deploys the model as a web service in a Docker container. This repository was developed as
-part of the [IBM Developer Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/).
+[IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/) and the public API is powered by
+[IBM Cloud](https://ibm.biz/Bdz2XM).
 
 ## Model Metadata
 | Domain | Application | Industry  | Framework | Training Data | Input Data Format |
@@ -122,7 +128,7 @@ folder) and get predicted text from the API.
 You can also test it on the command line, for example:
 
 ```
-$ curl -F "audio=@assets/8455-210777-0068.wav" -X POST http://localhost:5000/model/predict
+$ curl -F "audio=@samples/8455-210777-0068.wav" -X POST http://localhost:5000/model/predict
 ```
 
 You should see a JSON response like that below:
