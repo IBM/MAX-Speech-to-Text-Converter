@@ -24,4 +24,4 @@ SWAGGER_UI_DOC_EXPANSION = 'none'
 # API Metadata
 API_TITLE = 'MAX Speech to Text Converter'
 API_DESC = 'Converts spoken words into text form.'
-API_VERSION = '1.2.0'
+API_VERSION = '1.1.0'
