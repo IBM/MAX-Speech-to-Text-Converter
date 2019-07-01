@@ -39,7 +39,7 @@ The code in this repository deploys the model as a web service in a Docker conta
 | This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
 | Model Weights | [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/) | [Mozilla DeepSpeech](https://github.com/mozilla/DeepSpeech#getting-the-pre-trained-model)|
 | Model Code (3rd party) | [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/) | [DeepSpeech LICENSE](https://github.com/mozilla/DeepSpeech/blob/master/LICENSE)|
-| Test assets | Various | [Asset README](assets/README.md) |
+| Test Samples | Various | [Asset README](samples/README.md) |
 
 ## Pre-requisites:
 
@@ -120,7 +120,7 @@ $ docker run -it -p 5000:5000 max-speech-to-text-converter
 The API server automatically generates an interactive Swagger documentation page. Go to `http://localhost:5000` to load
 it. From there you can explore the API and also create test requests.
 
-Use the `model/predict` endpoint to load a test audio file (you can use one of the test audio files from the `assets`
+Use the `model/predict` endpoint to load a test audio file (you can use one of the test audio files from the `samples`
 folder) and get predicted text from the API.
 
 ![Swagger Doc Screenshot](docs/swagger-screenshot.png)
