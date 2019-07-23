@@ -17,7 +17,7 @@ on [Baidu's Deep Speech research paper](https://arxiv.org/abs/1412.5567).
 
 
 The model files are hosted on
-[IBM Cloud Object Storage](http://max-assets.s3-api.us-geo.objectstorage.softlayer.net/speech-to-text-converter/1.0/assets.tar.gz).
+[IBM Cloud Object Storage](https://max-assets-prod.s3.us-south.cloud-object-storage.appdomain.cloud/max-speech-to-text-converter/1.0.0/assets.tar.gz).
 The code in this repository deploys the model as a web service in a Docker container. This repository was developed as
 [IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/) and the public API is powered by
 [IBM Cloud](https://ibm.biz/Bdz2XM).
