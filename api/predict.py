@@ -46,11 +46,11 @@ class ModelPredictAPI(PredictAPI):
 
         try:
             prediction = self.model_wrapper.predict(audio_data)
-
-            # Align the predictions to the required API format
-            result['prediction'] = prediction
-            result['status'] = 'ok'
-
-            return result
         except OSError as error:
             abort(400, str(error), status="error")
+
+        # Align the predictions to the required API format
+        result['prediction'] = prediction
+        result['status'] = 'ok'
+
+        return result
