@@ -68,9 +68,7 @@ class ModelWrapper(MAXModelWrapper):
 
         try:
             fin = wave.open(io.BytesIO(audio_data))
-        except wave.Error:
-            raise OSError("Error reading the audio file. Only WAV files are supported.")
-        except EOFError:
+        except (wave.Error, EOFError):
             raise OSError("Error reading the audio file. Only WAV files are supported.")
 
         if fin.getnchannels() != 1:
