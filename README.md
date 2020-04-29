@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/IBM/MAX-Speech-To-Text-Converter.svg?branch=master)](https://travis-ci.com/IBM/MAX-Speech-To-Text-Converter)
-
+[![Website Status](https://img.shields.io/website/http/max-speech-to-text-converter.codait-prod-41208c73af8fca213512856c7a09db52-0000.us-east.containers.appdomain.cloud/swagger.json.svg?label=api+demo)](http://max-speech-to-text-converter.codait-prod-41208c73af8fca213512856c7a09db52-0000.us-east.containers.appdomain.cloud)
 
 [<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">](http://ibm.biz/max-to-ibm-cloud-tutorial) 
 
@@ -17,7 +17,7 @@ on [Baidu's Deep Speech research paper](https://arxiv.org/abs/1412.5567).
 
 
 The model files are hosted on
-[IBM Cloud Object Storage](https://max-assets-prod.s3.us-south.cloud-object-storage.appdomain.cloud/max-speech-to-text-converter/1.0.0/assets.tar.gz).
+[IBM Cloud Object Storage](https://max-cdn.cdn.appdomain.cloud/max-speech-to-text-converter/1.0.0/assets.tar.gz).
 The code in this repository deploys the model as a web service in a Docker container. This repository was developed as
 [IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/) and the public API is powered by
 [IBM Cloud](https://ibm.biz/Bdz2XM).
@@ -132,7 +132,7 @@ folder) and get predicted text from the API.
 
 You can also test it on the command line, for example:
 
-```
+```bash
 $ curl -F "audio=@samples/8455-210777-0068.wav" -X POST http://localhost:5000/model/predict
 ```
 
