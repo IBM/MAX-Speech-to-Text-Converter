@@ -18,7 +18,7 @@ import os
 import pytest
 import requests
 
-SERVER_URL = os.getenv('SERVER_URL', 'http://localhost:5000')
+SERVER_URL = os.getenv('SERVER_URL', 'http://0.0.0.0:5000')
 
 
 def test_swagger():
