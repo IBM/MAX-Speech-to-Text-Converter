@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: max-speech-to-text-converter
-        image: codait/max-speech-to-text-converter:latest
+        image: quay.io/codait/max-speech-to-text-converter:latest
         ports:
           - containerPort: 5000
